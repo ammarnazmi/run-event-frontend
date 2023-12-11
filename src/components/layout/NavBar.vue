@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="#4fa5bf" dark flat class="px-12">
+  <v-app-bar color="#4fa5bf" class="px-12" :elevation="0" style="position: fixed;">
     <v-btn>
       RUN
       <v-icon color="yellow" left class="mr-2">
@@ -98,6 +98,7 @@ export default {
 <style lang="scss" scoped>
 .v-app-bar {
   border-bottom: 1px solid #90caf9;
+  z-index: 9999;
 }
 
 .dropdown-nav {
@@ -113,18 +114,6 @@ export default {
   background: linear-gradient(#4fa5bf, #b4c8bf);
   top: 0;
   left: 0;
-
-  li {
-    margin-left: 0;
-    .link {
-      color: white;
-      &:hover {
-        transition: 0.5s ease all;
-        color: #42d392;
-        border-color: #42d392;
-      }
-    }
-  }
 }
 
 .icon {
