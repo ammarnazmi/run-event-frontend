@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     countDown() {
-      const countDowmDate = new Date("Oct 16, 2024 00:00:00").getTime();
+      const countDowmDate = new Date("Dec 15, 2023 00:00:00").getTime();
       setInterval(function () {
         const now = new Date().getTime();
         const distance = countDowmDate - now;

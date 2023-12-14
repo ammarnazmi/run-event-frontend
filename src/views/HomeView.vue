@@ -39,7 +39,7 @@
       </div>
 
       <v-col cols="12" class="mt-16" id="event" style="text-align: center">
-        <v-card class="mx-auto" max-width="800" color="#E0F2F1">
+        <v-card class="mx-auto rounded-xl" max-width="800" color="#E0F2F1">
           <h1 class="pr-5 pl-5 pt-5">
             SIME DARBY PROPERTY FAMILY FUN RUN & RIDE 2024 @ PUTRA HEIGHTS
           </h1>
@@ -48,6 +48,7 @@
           </div>
         </v-card>
       </v-col>
+      <event-information></event-information>
     </v-container>
   </v-app>
 </template>
@@ -55,12 +56,14 @@
 <script>
 import NavBar from "@/components/layout/NavBar.vue";
 import CountDown from "@/components/users/CountDown.vue";
+import EventInformation from "@/components/users/EventInformation.vue";
 
 export default {
   name: "HomeView",
   components: {
     NavBar,
     CountDown,
+    EventInformation,
   },
 };
 </script>
