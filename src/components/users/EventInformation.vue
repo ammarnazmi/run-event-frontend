@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="8" offset="2" style="background-color: #b4c8bf;">
+  <div class="container">
     <div class="card">
       <div class="card-header">
         <h3>Video</h3>
@@ -9,18 +9,17 @@
         <p>Hello</p>
       </div>
     </div>
-  </v-col>
+  </div>
 </template>
 
 <Style lang="scss" scoped>
-section {
-  .card {
-    background-color: white;
-    width: 60%;
-  }
-
+.card {
   .card-header {
     background-color: #4fa5bf;
+
+    h3 {
+      color: white;
+    }
   }
 }
 </Style>
