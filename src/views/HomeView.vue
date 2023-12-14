@@ -48,7 +48,7 @@
           </div>
         </v-card>
       </v-col>
-      <event-information></event-information>
+      <event-information class="mt-16"></event-information>
     </v-container>
   </v-app>
 </template>
